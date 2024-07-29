@@ -1,0 +1,103 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+.container-fluid
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #eff7f6;
+}
+.header
+{
+	height: 80px;
+	width: 100%;
+	display: flex;
+	background-color: #eff7f6;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.menu
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+.menu a
+{
+	text-decoration: none;
+	color: #0d0c1d;
+	font-weight: 600;
+}
+.banner
+{
+	height: 200px;
+	width: 100%;
+	background-color: darkred;
+}
+.banner .carousel
+{
+	height: 100%;
+	width: 100%;
+}
+.banner .carousel img
+{
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+}
+.product-head
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.products
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.products .card
+{
+	background-color: #d9d9d9;
+	border-color: rgba(0, 0, 0, 0.3);
+}
+.products .card .card-img-top
+{
+	height: 250px;
+	object-fit: cover;
+}
+.bar
+{
+	display: none;
+}
+@media (max-width:576px)
+{
+	.header .logo h1
+	{
+		font-size: 1em;
+	}
+	.menu a
+	{
+		font-size: 13px;
+		display: none;
+	}
+	.bar
+	{
+		display: block;
+		font-size: 16px;
+	}
+}
